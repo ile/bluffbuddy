@@ -1,7 +1,7 @@
 # BluffDaddy
 
 > [!IMPORTANT]
-> **As of October 2023, I have started developing a poker solver as a business and have decided to suspend development of this open-source project. See [this issue] for more information.**
+> **As of March 2024, I started developing this solver further.**
 
 [this issue]: https://github.com/b-inary/postflop-solver/issues/46
 
