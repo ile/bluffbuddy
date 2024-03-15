@@ -68,13 +68,13 @@ const config = useConfigStore();
 
 const itemStyle = (view: SideView) => {
   return (
-    "side-bar-item " + (view === store.sideView ? "font-bold bg-blue-100" : "")
+    "side-bar-item " + (view === store.sideView ? "bg-blue-100" : "")
   );
 };
 
 const boardTexts = computed(() => {
   if (config.board.length === 0) {
-    return [{ rank: "-", suit: "", colorClass: "text-black" }];
+    return [];
   } else {
     return config.board.map(cardText);
   }
@@ -84,7 +84,7 @@ const boardTexts = computed(() => {
 <style scoped>
 .side-bar-item {
   @apply block mx-2 my-[0.1875rem] px-4 py-2.5 rounded-3xl;
-  @apply text-left text-[1.0625rem] select-none;
+  @apply text-left select-none;
   @apply transition-colors hover:bg-blue-100;
 }
 </style>

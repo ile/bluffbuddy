@@ -5,7 +5,7 @@
         <div class="flex my-1 gap-8">
           <div>
             <div class="my-1">
-              <span class="inline-block w-[7.5rem]">Starting pot:</span>
+              <span class="inline-block w-[7.5rem]">Pot (flop):</span>
               <input
                 v-model="config.startingPot"
                 type="number"
@@ -80,12 +80,6 @@
               />
             </div>
           </div>
-
-          <div class="ml-auto p-1">
-            <button class="button-base button-blue" @click="clearConfig">
-              Clear
-            </button>
-          </div>
         </div>
 
         <div
@@ -99,6 +93,8 @@
             </div>
           </div>
         </div>
+
+        <hr />
 
         <div class="mt-6">
           <div class="flex">
@@ -322,27 +318,11 @@
           </div>
         </div>
 
-        <div>
           <div class="flex">
             <div class="mt-6 font-semibold">IP bet sizes</div>
-            <div class="flex flex-grow items-center justify-center gap-6">
-              <button
-                class="mt-3 button-base button-blue button-arrow"
-                :disabled="errorIp.length > 0 || hasEdit"
-                @click="ipToOop"
-              >
-                ↑
-              </button>
-              <button
-                class="mt-3 button-base button-blue button-arrow"
-                :disabled="errorOop.length > 0 || hasEdit"
-                @click="oopToIp"
-              >
-                ↓
-              </button>
-            </div>
           </div>
 
+        <div>
           <div class="flex gap-5">
             <div>
               <div class="my-1 underline">Flop</div>
@@ -474,6 +454,8 @@
             </div>
           </div>
         </div>
+
+        <hr />
 
         <div class="flex mt-6 gap-4">
           <div>

@@ -1,13 +1,9 @@
 <template>
-  <p>Desktop Postflop v0.2.7</p>
-  <p>Copyright (C) 2022 Wataru Inariba</p>
+  <p>BluffBuddy v0.2.7</p>
+  <p>Copyright (C) 2022 Wataru Inariba, (C) 2024 Ilkka Huotari</p>
   <p>
-    <a
-      target="_blank"
-      class="link"
-      href="https://github.com/b-inary/desktop-postflop"
-    >
-      https://github.com/b-inary/desktop-postflop
+    <a target="_blank" class="link" href="https://github.com/ile/bluffbuddy">
+      https://github.com/ile/bluffbuddy
     </a>
   </p>
 </template>

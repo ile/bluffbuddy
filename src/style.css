@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Noto Sans";
+  src:
+    local("Noto Sans"),
+    url("assets/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf");
+}
+
 * {
   line-height: 1.6;
 }
@@ -10,14 +17,26 @@
   @apply leading-tight;
 }
 
+.bg-white {
+  background-color: #FBF9F2;
+}
+
 body {
   @apply bg-gray-50;
-  font-family: system-ui, "Noto Sans", "Open Sans", Roboto, sans-serif;
+  font-family: "Noto Sans";
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 20px auto 0 auto;
 }
 
 .button-base {
   @apply rounded-lg shadow px-3.5 py-1.5 text-white text-sm font-semibold;
   @apply transition-colors disabled:opacity-40;
+  border-radius: 30px;
 }
 
 .button-blue {
@@ -79,6 +98,7 @@ input.input-error {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
