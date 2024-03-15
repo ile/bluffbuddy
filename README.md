@@ -1,6 +1,5 @@
 # BluffDaddy
 
-
 > [!IMPORTANT]
 > **As of October 2023, I have started developing a poker solver as a business and have decided to suspend development of this open-source project. See [this issue] for more information.**
 
